@@ -1,6 +1,5 @@
 body {
     background-image: url("starry_night.gif");
-    color: antiquewhite;
     font-size: 18px;
 }
 
@@ -23,27 +22,26 @@ img {
     margin: auto;
     border: 10px solid;
     border-radius: 8px;
+    max-width: 20em;
 }
 
 .selfieImg {
-    height: 20em;
-    width: 20em;
+
     border-color: blue;
 }
 
 .fishyimg {
-    height: 20em;
-    width: 20em;
     border-color: teal;
 }
 
 .squirrel {
     height: 20em;
     width: 20em;
+    border-color: blueviolet;
 }
 
-p {
+p,ul {
     text-align: left;
-    color: darkslateblue;
+    color: antiquewhite;
     font-size: large;
 }
