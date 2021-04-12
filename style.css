@@ -1,32 +1,45 @@
+body {
+    background-image: url("starry_night.gif");
+    color: antiquewhite;
+    font-size: 18px;
+}
+
 h1 {
-    color: black;
-    text-underline: black;
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 72px;
+    color: blue;
+    text-underline: blueviolet;
     text-align: center;
     text-decoration: underline;
 }
 
-.selfieImg {
+h3 {
+    color: blueviolet;
+    font-family: Impact, sans-serif;
+}
+
+img {
     display: block;
+    margin: auto;
+    border: 10px solid;
+    border-radius: 8px;
+}
+
+.selfieImg {
     height: 20em;
     width: 20em;
-    border-radius: 10px;
-    margin-left: 5px;
+    border-color: blue;
 }
 
 .fishyimg {
-    display: block;
     height: 20em;
     width: 20em;
-    border-radius: 10px;
-    margin-left: 5px;
+    border-color: teal;
 }
 
 .squirrel {
-    display: block;
     height: 20em;
     width: 20em;
-    border-radius: 10px;
-    margin-left: 5px;
 }
 
 p {
