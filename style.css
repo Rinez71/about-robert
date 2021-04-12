@@ -1,0 +1,36 @@
+h1 {
+    color: black;
+    text-underline: black;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.selfieImg {
+    display: block;
+    height: 20em;
+    width: 20em;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.fishyimg {
+    display: block;
+    height: 20em;
+    width: 20em;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.squirrel {
+    display: block;
+    height: 20em;
+    width: 20em;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+p {
+    text-align: left;
+    color: darkslateblue;
+    font-size: large;
+}
