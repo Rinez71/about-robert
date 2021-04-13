@@ -1,47 +1,156 @@
 body {
-    background-image: url("starry_night.gif");
+    background-image: url("assets/starry_night.gif");
     font-size: 18px;
+}
+
+.banner {
+    text-align: center;
 }
 
 h1 {
     font-family: "Comic Sans MS", sans-serif;
     font-size: 72px;
     color: blue;
+    text-outline: 1px red;
     text-underline: blueviolet;
     text-align: center;
     text-decoration: underline;
+    animation: blinker 2s linear infinite;
 }
 
 h3 {
-    color: blueviolet;
-    font-family: Impact, sans-serif;
+    color: blue;
+    background-color: yellow;
+    text-align: center;
+    font-family: Papyrus, fantasy;
+    font-size: x-large;
 }
 
 img {
-    display: block;
     margin: auto;
     border: 10px solid;
     border-radius: 8px;
     max-width: 20em;
 }
 
-.selfieImg {
+.listIcon {
+    border: none;
+    max-height: 3em;
+    padding-left: 2em;
+}
 
+.list {
+    margin: auto;
+    max-width: 20em;
+    background-color: blue;
+}
+
+.selfieImg {
     border-color: blue;
 }
 
-.fishyimg {
-    border-color: teal;
+.selfie-stack {
+    text-align: center;
+    margin: auto;
+    display: inline-grid;
+    grid-template-columns: repeat(7, 1fr);
+    position: relative;
 }
+
+.selfie-stack-top {
+    padding-top: 25%;
+    padding-left: 25%;
+    grid-column: 4;
+    grid-row: 1;
+    z-index: 1;
+}
+
+.selfie-stack-bottom {
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.shades {
+    position: relative;
+    border: none;
+    width: 65%;
+    animation: shader 10s linear infinite;
+}
+
+.games {
+    margin: 5em;
+    text-align: center;
+    place-content: space-evenly;
+}
+
+.games-list{
+    display: inline-grid;
+    padding-inline: 5em;
+}
+
+.console-logos{
+    display: inline-grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    position: relative;
+}
+.logo-stack-1{
+    grid-column: 1;
+    grid-row: 1;
+}
+.logo-stack-2 {
+    grid-column: 2;
+    grid-row: 2;
+}
+.logo-stack-3 {
+    grid-column: 3;
+    grid-row: 1;
+}
+.logo-stack-4 {
+    grid-column: 1;
+    grid-row: 4;
+}
+.logo-stack-5 {
+    grid-column: 2;
+    grid-row: 3;
+}
+.logo-stack-6 {
+    grid-column: 3;
+    grid-row: 4;
+}
+
 
 .squirrel {
-    height: 20em;
-    width: 20em;
-    border-color: blueviolet;
+    display: block;
+    height: 15em;
+    width: 15em;
+    border-color: darkred;
 }
 
-p,ul {
+.fishyimg {
+    display: block;
+    border-color: slategray;
+}
+
+p, ul {
     text-align: left;
     color: antiquewhite;
-    font-size: large;
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: larger;
+}
+
+
+@keyframes blinker {
+    50% {
+        color: antiquewhite;
+    }
+}
+
+@keyframes shader {
+    90% {
+        opacity: 100;
+    }
+    95% {
+        opacity: 0;
+    }
 }
